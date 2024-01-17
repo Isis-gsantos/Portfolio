@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@200;300;400;700&family=Tektur&display=swap');
+@import url('./reset.css');
+
+html {
+    font-size: 62.5%;
+  }
+
+.first-look {
+    height: 100vh;
+    background-image: url('../images/space.gif');
+    background-size: cover;
+    position: relative;
+}
+
+header {
+    padding: 30px;
+    margin: 0 50px;
+}
+
+.header-socials {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 2.5rem;
+    gap: 25px;
+    transition: 0.4s ease-in;
+}
+
+.header-socials :hover {
+    transform: scale(1.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 55px;
+    margin-top: -25px;
+}
+
+.header-content li a {
+    font-family: 'Saira', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.first-look img {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: absolute;
+    bottom: 0;
+}
+
+.phrases h1 {
+    font-family: 'Tektur', sans-serif;
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+#typed-output::after {
+    content: '|';
+    display: inline-block;
+    animation: blink 0.7s infinite alternate;
+}
+
+@keyframes blink {
+    to {
+        opacity: 0;
+    }
+}

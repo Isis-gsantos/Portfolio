@@ -5,10 +5,11 @@ html {
     font-size: 62.5%;
   }
 
+/* FIRST LOOK */
 .first-look {
     height: 100vh;
     background-image: url('../images/space.gif');
-    background-size: cover;
+    /* background-size: cover; */
     position: relative;
 }
 
@@ -39,9 +40,27 @@ header {
 }
 
 .header-content li a {
-    font-family: 'Saira', sans-serif;
     font-size: 1.8rem;
     font-weight: bold;
+    position: relative;
+}
+
+.header-content li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.header-content li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .first-look img {
@@ -51,10 +70,10 @@ header {
     animation: downarrow 0.6s infinite alternate ease-in-out;
 }
 
-@-webkit-keyframes downarrow {
+@keyframes downarrow {
     0% { -webkit-transform: translateY(0); opacity: 0.4; }
     100% { -webkit-transform: translateY(0.4em); opacity: 0.9; }
-  }
+}
 
 .phrases h1 {
     font-family: 'Tektur', sans-serif;
@@ -75,4 +94,47 @@ header {
     to {
         opacity: 0;
     }
+}
+
+/* ABOUT ME */
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 50px;
+    position: relative;
+}
+
+.about-me::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    background-image: url('../images/cool-background.png');
+    width: 100%;
+    height: 100%;
+    filter: opacity(90%);
+}
+
+.about-me .icon {
+    max-width: 300px;
+    border: 6px solid #ff8fab;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.about-me .description {
+    max-width: 52%;
+    z-index: 2;
+}
+
+.about-me .description h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+.about-me .description p {
+    font-size: 1.8rem;
+    font-weight: 400;
 }

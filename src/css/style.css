@@ -104,6 +104,7 @@ header {
     padding: 50px;
     gap: 50px;
     position: relative;
+    height: 85vh;
 }
 
 .about-me::before {
@@ -114,7 +115,7 @@ header {
     background-image: url('../images/cool-background.png');
     width: 100%;
     height: 100%;
-    filter: opacity(90%);
+    filter: opacity(92%);
 }
 
 .about-me .icon {
@@ -130,11 +131,108 @@ header {
 }
 
 .about-me .description h2 {
-    font-size: 2.8rem;
+    font-size: 3rem;
     margin-bottom: 20px;
 }
 
 .about-me .description p {
     font-size: 1.8rem;
     font-weight: 400;
+}
+
+/* PROJECTS */
+.projects {
+    background-image: url('../images/cool-background.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.projects h2 {
+    font-size: 3rem;
+    border-bottom: 1px solid white;
+    margin-bottom: 50px;
+}
+
+.projects-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.projects-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    font-size: 1.8rem;
+}
+
+.projects-list a, p {
+    margin: 15px;
+}
+
+.projects-list h3 {
+    font-size: 3rem;
+}
+
+.projects img {
+    max-width: 450px;
+    border-radius: 10px;
+}
+
+.projects-list li p {
+    max-width: 80%;
+}
+
+.projects-list .languages {
+    font-size: 3.5rem;
+}
+
+/* SKILLS */
+.skills {
+    background-image: url('../images/cool-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    border-bottom: 1px solid white;
+}
+
+.skills-itens {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.skills-itens li {
+    margin: 20px;
+}
+
+.skills-itens .fa-brands {
+    font-size: 5.5rem;
+    transition: 0.2s ease-in;
+}
+
+.skills-itens .fa-brands:hover {
+    transform: scale(1.3);
+}
+
+.skills-itens .skill-description {
+    max-width: 350px;
+}
+
+/* CONTACT */
+.contact {
+    background-color: black;
 }

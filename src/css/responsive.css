@@ -1,0 +1,96 @@
+@media (max-width: 968px) {
+    .projects .projects-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projects .projects-list li {
+        margin: 30px 0 40px;
+        text-align: center;
+    }
+
+    .skills .skills-itens {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 820px) {
+    .header .header-content .menu {
+        display: block;
+    }
+
+    .header nav ul {
+        display: none;
+    }
+
+    .header input:checked~ul {
+        display: block;
+    }
+
+    .header nav {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 3;
+    }
+
+    .header nav ul {
+        width: 130px;
+        background-color: #354f52;
+        padding: 25px;
+        margin-top: -50px;
+        border-radius: 20px;
+    }
+
+    .header nav ul a {
+        text-align: center;
+        padding: 10px 0;
+        display: block;
+    }
+
+    .about-me .fading{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-me .description {
+        text-align: center;
+    }
+}
+
+@media (max-width: 640px) {
+    .first-look .phrases h1 {
+        font-size: 3.2rem;
+        text-align: center;
+        white-space: wrap;
+    }
+
+    .skills .skills-itens {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact .contact-itens {
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .projects .projects-list img {
+        max-width: 100%;
+    }
+
+    .contact img {
+        max-width: 100%;
+    }
+
+    .contact .contact-itens h2 {
+        font-size: 2.5rem;
+    }
+}

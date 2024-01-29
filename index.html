@@ -13,19 +13,35 @@
 
 <body>
     <section class="first-look">
-        <header>
-            <nav>
+        <header class="header">
+            <nav class="header-content">
+                <input type="checkbox" id="menu-hamburguer">
+                <label for="menu-hamburguer">
+                    <div class="menu">
+                        <span class="menu-hamburguer"></span>
+                    </div>
+                </label>
+
                 <ul class="header-socials">
-                    <li><a href=""><i class="fa-brands fa-github"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href=""><i class="fa-solid fa-envelope"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+                    <li><a href="https://github.com/Isis-gsantos" target="_blank"><i
+                                class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/isis-gon%C3%A7alves-santos/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a></li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                        <span class="social-hover">isissantos@gmail.com</span>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <span class="social-hover">+55 (35) 99854-8425</span>
+                    </li>
                 </ul>
 
-                <ul class="header-content">
+                <ul class="header-itens">
                     <li><a href="#about-me">Sobre Mim</a></li>
                     <li><a href="#projects">Projetos</a></li>
                     <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contato</a></li>
                 </ul>
             </nav>
         </header>
@@ -34,21 +50,33 @@
             <h1 id="typed-output"></h1>
         </article>
 
-        <img src="./src/images/seta-para-baixo.png" alt="">
+        <a href="#about-me"><img src="./src/images/seta-para-baixo.png" alt=""></a>
     </section>
 
     <section class="about-me" id="about-me">
-        <img src="./src/images/foto perfil.png" alt="foto de perfil" class="icon">
+        <div class="fading">
+            <img src="./src/images/foto perfil.png" alt="foto de perfil" class="icon">
 
-        <div class="description">
-            <h2>Sobre Mim</h2>
-            <p>
-                Sou formada em Medicina Veterinária pela PUC Minas, porém acabei não seguindo a profissão pois me deseludi com a prática da profissão e o quão ela é desvaloriada. A partir disso, decidi buscar outras alternativas de trabalho e sempre tive o interesse em saber como seria a área de desenvolvimento. Depois de muita reflexão achei minha vocação na área Frontend, visto que sempre gostei de elementos visuais e de tecnologia.
-                <br>
-                Mesmo não seguindo a profissão veterinária, essa área me ensinou muito disciplina, determinação e trabalho em grupo, sempre levarei esses ensinamentos na minha vida. 
-                <br>
-                Sou uma clássica nerd/geek, como você preferir chamar, gosto de jogar jogos bonitinhos e casuais, animes, filmes (principalmente de animação) e séries. Sou muito feliz em fazer parte da comunidade de desenvolvimento e apesar de ainda não ter exercido a função, tenho certeza que me agarrarei à oportunidade que surgir e farei o meu melhor. 
-            </p>
+            <div class="description">
+                <h2>Sobre Mim</h2>
+                <p>
+                    Sou formada em Medicina Veterinária pela PUC Minas, porém acabei não seguindo pois me deseludi com a
+                    prática da profissão e o quão ela é desvaloriada. A partir disso, decidi buscar outras alternativas
+                    de
+                    trabalho e sempre tive o interesse em saber como seria a área de desenvolvimento. Depois de muita
+                    reflexão achei minha vocação na área Frontend, visto que sempre gostei de elementos visuais e de
+                    tecnologia.
+                    <br>
+                    Mesmo não seguindo a profissão veterinária, essa área me ensinou muito disciplina, determinação e
+                    trabalho em grupo, sempre levarei esses ensinamentos na minha vida.
+                    <br>
+                    Sou uma clássica nerd/geek, como você preferir chamar, gosto de jogar jogos bonitinhos e casuais,
+                    animes, filmes (principalmente de animação) e séries. Sou muito feliz em fazer parte da comunidade
+                    de
+                    desenvolvimento e apesar de ainda não ter exercido a função, tenho certeza que me agarrarei à
+                    oportunidade que surgir e farei o meu melhor.
+                </p>
+            </div>
         </div>
     </section>
 
@@ -56,12 +84,15 @@
         <h2>Meus Projetos</h2>
         <nav>
             <ul class="projects-list">
-                <li>
+                <li class="fading">
                     <h3>FoodDev</h3>
                     <a href="https://github.com/Isis-gsantos/FoodDev-projeto" target="_blank"><i>Link do projeto</i></a>
                     <img src="./src/images/fooddev.jpg" alt="projeto FoodDev">
                     <p>
-                        O projeto é sobre um site para um restaurante fictício, com um layout visualmente agradável, que permite o usuário visualizar o catálogo e realizar uma compra. Nesse projeto explorei os recursos do JavaScript, incluindo um carrossel de imagem, catálogo dinâmico e validação de formulário.
+                        O projeto é sobre um site para um restaurante fictício, com um layout visualmente agradável, que
+                        permite o usuário visualizar o catálogo e realizar uma compra. Nesse projeto explorei os
+                        recursos do JavaScript, incluindo um carrossel de imagem, catálogo dinâmico e validação de
+                        formulário.
                     </p>
                     <div class="languages">
                         <i class="fa-brands fa-html5"></i>
@@ -70,12 +101,15 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="fading">
                     <h3>Weather Forecast</h3>
-                    <a href="https://github.com/Isis-gsantos/Weather-Forecast-APP" target="_blank"><i>Link do projeto</i></a>
+                    <a href="https://github.com/Isis-gsantos/Weather-Forecast-APP" target="_blank"><i>Link do
+                            projeto</i></a>
                     <img src="./src/images/weather.jpg" alt="projeto weather forecast">
                     <p>
-                        Weather Forecast é um app de previsão do tempo, através campo de busca permite que o usuário busque a cidade cuja previsão do tempo se deseja consultar. Ao clicar no botão Buscar ou na tecla Enter, o sistema faz uma busca utilizando a API do Open Weather API.
+                        Weather Forecast é um app de previsão do tempo, através campo de busca permite que o usuário
+                        busque a cidade cuja previsão do tempo se deseja consultar. Ao clicar no botão Buscar ou na
+                        tecla Enter, o sistema faz uma busca utilizando a API do Open Weather API.
                     </p>
                     <div class="languages">
                         <i class="fa-brands fa-html5"></i>
@@ -84,12 +118,16 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="fading">
                     <h3>Github API</h3>
-                    <a href="https://github.com/Isis-gsantos/QUEST-JS-fetch-github-API" target="_blank"><i>Link do projeto</i></a>
+                    <a href="https://github.com/Isis-gsantos/QUEST-JS-fetch-github-API" target="_blank"><i>Link do
+                            projeto</i></a>
                     <img src="./src/images/github.jpg" alt="projeto github">
                     <p>
-                        O projeto é o resultado de um desafio do curso de desenvolvimento front-end DevQuest do módulo de JavaScript avançado. Através do campo de busca deve inserir o nome do usuário cujo perfil deseja consultar, ao clicar no botão consultar ou apertar a tecla 'Enter',, o sistema faz a busca através da API do GitHub.
+                        O projeto é o resultado de um desafio do curso de desenvolvimento front-end DevQuest do módulo
+                        de JavaScript avançado. Através do campo de busca deve inserir o nome do usuário cujo perfil
+                        deseja consultar, ao clicar no botão consultar ou apertar a tecla 'Enter',, o sistema faz a
+                        busca através da API do GitHub.
                     </p>
                     <div class="languages">
                         <i class="fa-brands fa-html5"></i>
@@ -98,36 +136,44 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="fading">
                     <h3>TravelNow</h3>
-                    <a href="https://github.com/Isis-gsantos/landing-page-travels" target="_blank"><i>Link do projeto</i></a>
+                    <a href="https://github.com/Isis-gsantos/landing-page-travels" target="_blank"><i>Link do
+                            projeto</i></a>
                     <img src="./src/images/travels LP.jpg" alt="projeto TravelNow">
                     <p>
-                        TravelNow é uma landing page de uma agência de viagens. Esse projeto foi desenvolvido com HTML, CSS e layout responsivo. Grid e Flexbox.
+                        TravelNow é uma landing page de uma agência de viagens. Esse projeto foi desenvolvido com HTML,
+                        CSS e layout responsivo. Grid e Flexbox.
                     </p>
                     <div class="languages">
                         <i class="fa-brands fa-html5"></i>
                         <i class="fa-brands fa-css3-alt"></i>
                 </li>
 
-                <li>
+                <li class="fading">
                     <h3>Loja de Roupas</h3>
                     <a href="https://github.com/Isis-gsantos/Loja-Roupas" target="_blank"><i>Link do projeto</i></a>
                     <img src="./src/images/loja roupas.jpg" alt="projeto loja de roupas">
                     <p>
-                        Site de uma loja de roupas virtual que contém vários elementos em conjunto com mais de uma página, contando com uma homepage, um catálogo e uma página de vendas, todas integradas entre si e de forma responsiva. Utilizei HTML, SASS e Bootstrap para desenvolver o projeto.
+                        Site de uma loja de roupas virtual que contém vários elementos em conjunto com mais de uma
+                        página, contando com uma homepage, um catálogo e uma página de vendas, todas integradas entre si
+                        e de forma responsiva. Utilizei HTML, SASS e Bootstrap para desenvolver o projeto.
                     </p>
                     <div class="languages">
                         <i class="fa-brands fa-html5"></i>
                         <i class="fa-brands fa-sass"></i>
                 </li>
 
-                <li>
+                <li class="fading">
                     <h3>Validação de Formulário</h3>
-                    <a href="https://github.com/Isis-gsantos/QUEST-Validacao-de-Formulario" target="_blank"><i>Link do projeto</i></a>
+                    <a href="https://github.com/Isis-gsantos/QUEST-Validacao-de-Formulario" target="_blank"><i>Link do
+                            projeto</i></a>
                     <img src="./src/images/validacao.formulario.jpg" alt="projeto validação de formulário">
                     <p>
-                        Esse projeto foi um desafio proporcionado pelo curso de desenvolvimento front-end DevQuest, o objetivo era recriar um formulário fornecido pelo Figma, fazer a validação do mesmo com JavaScript. Ao clicar no botão, caso o usuário não tenha preenshido corretamente, o campo ficará vermelho e aparecerá uma mensagem, caso contrário o campo ficará com as bordas verder.
+                        Esse projeto foi um desafio proporcionado pelo curso de desenvolvimento front-end DevQuest, o
+                        objetivo era recriar um formulário fornecido pelo Figma, fazer a validação do mesmo com
+                        JavaScript. Ao clicar no botão, caso o usuário não tenha preenshido corretamente, o campo ficará
+                        vermelho e aparecerá uma mensagem, caso contrário o campo ficará com as bordas verder.
                     </p>
                     <div class="languages">
                         <i class="fa-brands fa-html5"></i>
@@ -142,68 +188,91 @@
         <h2>Skills</h2>
         <nav>
             <ul class="skills-itens">
-                <li>
+                <li class="fading">
                     <i class="fa-brands fa-html5" style="color: #fd610d;"></i>
                     <p class="skill-description">
-                        Possuo um domínio sólido em html, a linguagem base da web, buscando sempre aplicar conceitos como código limpo e elementos semânticos, criando dessa forma estruturas de página bem organizadas.
+                        Possuo um domínio sólido em html, a linguagem base da web, buscando sempre aplicar conceitos
+                        como código limpo e elementos semânticos, criando dessa forma estruturas de página bem
+                        organizadas.
                     </p>
                 </li>
 
-                <li>
+                <li class="fading">
                     <i class="fa-brands fa-css3-alt" style="color: #0830d4;"></i>
                     <p class="skill-description">
-                        Familiaridade com os valores e propriedades do CSS, permitindo-me ajustar a posição dos elementos na tela utilizando técnicas como Flexbox e Grid, criar layouts responsivos para diferentes tipos de tamanhos de tela e estilizar os elementos da página.
+                        Familiaridade com os valores e propriedades do CSS, permitindo-me ajustar a posição dos
+                        elementos na tela utilizando técnicas como Flexbox e Grid, criar layouts responsivos para
+                        diferentes tipos de tamanhos de tela e estilizar os elementos da página.
                     </p>
                 </li>
 
-                <li>
+                <li class="fading">
                     <i class="fa-brands fa-js" style="color: #FFD43B;"></i>
                     <p class="skill-description">
-                        Familiaridade com recursos como arrow functions, destructuring e template literals. Utilização de funções, estruturas de repetição, eventos, manipulação do DOM e integração de APIs para desenvolver projetos inovadores que aprimorem a experiência do usuário.
+                        Familiaridade com recursos como arrow functions, destructuring e template literals. Utilização
+                        de funções, estruturas de repetição, eventos, manipulação do DOM e integração de APIs para
+                        desenvolver projetos inovadores que aprimorem a experiência do usuário.
                     </p>
                 </li>
 
-                <li>
+                <li class="fading">
                     <i class="fa-brands fa-sass" style="color: #f4579b;"></i>
                     <p class="skill-description">
-                        Realizo aplicação de nesting na estilização para proporcionar eficiência e escalabilidade, além de organizar hierarquicamente o código.
+                        Realizo aplicação de nesting na estilização para proporcionar eficiência e escalabilidade, além
+                        de organizar hierarquicamente o código.
                     </p>
                 </li>
 
-                <li>
+                <li class="fading">
                     <i class="fa-brands fa-bootstrap" style="color: #9102de;"></i>
                     <p class="skill-description">
-                        Familiaridade com a aplicação do framework para aplicar componentes e interfaces, dessa forma criando sites responsivos e utilizando menos código.
+                        Familiaridade com a aplicação do framework para aplicar componentes e interfaces, dessa forma
+                        criando sites responsivos e utilizando menos código.
                     </p>
                 </li>
 
-                <li>
+                <li class="fading">
                     <i class="fa-brands fa-github" style="color: #9102de;"></i>
                     <p class="skill-description">
-                        Utilizo o GitHub para criar repositórios dos meus projetos, onde posso armazenar e gerenciar meus códigos de maneira segura, além de subir meus projetos pessoais no GitHub pages. Isso inclui a criação de branches para trabalhar em novas funcionalidades ou correções sem afetar o código principal. 
+                        Utilizo o GitHub para criar repositórios dos meus projetos, onde posso armazenar e gerenciar
+                        meus códigos de maneira segura, além de subir meus projetos pessoais no GitHub pages. Isso
+                        inclui a criação de branches para trabalhar em novas funcionalidades ou correções sem afetar o
+                        código principal.
                     </p>
                 </li>
             </ul>
         </nav>
     </section>
 
-    <section class="contact">
-        <h2>Gostou? Entre em contato.</h2>
+    <section class="contact" id="contact">
+        <img src="./src/images/catcomputer-unscreen.gif" alt="gif gato mexendo no computador">
 
-        <div>
-            <img src="./src/images/programmer-cat.webp" alt="gif gato mexendo no computador">
+        <div class="contact-itens">
+            <h2>Gostou? Entre em contato.</h2>
 
             <nav>
                 <ul class="contact-socials">
-                    <li><a href=""><i class="fa-brands fa-github"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href=""><i class="fa-solid fa-envelope"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+                    <li><a href="https://github.com/Isis-gsantos" target="_blank"><i
+                                class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/isis-gon%C3%A7alves-santos/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a></li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                        <span class="social-hover">isissantos@gmail.com</span>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <span class="social-hover">+55 (35) 99854-8425</span>
+                    </li>
                 </ul>
 
                 <button class="btn-curriculo"><a href="">Currículo</a></button>
+            </nav>
         </div>
     </section>
+
+    <!-- SCROLL MAGIC -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
 
     <script src="./src/js/index.js"></script>
 </body>

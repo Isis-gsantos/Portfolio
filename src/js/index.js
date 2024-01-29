@@ -34,3 +34,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
     type();
 });
+
+const controller = new ScrollMagic.Controller();
+const elements = document.querySelectorAll('.fading');
+
+elements.forEach((element, index) => {
+    const scene = new ScrollMagic.Scene({
+        triggerElement: element,
+        triggerHook: 0.8, 
+    })
+    .on('enter', function () {
+        element.classList.add('show');
+        scene.off('enter');
+    })
+    .addTo(controller);
+});

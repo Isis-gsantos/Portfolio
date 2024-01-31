@@ -1,3 +1,4 @@
+//Efeito typing
 document.addEventListener('DOMContentLoaded', () => {
     const phrases = [
         "Olá! Eu sou Isis Gonçalves Santos",
@@ -35,6 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     type();
 });
 
+//Animação fading na página
 const controller = new ScrollMagic.Controller();
 const elements = document.querySelectorAll('.fading');
 
@@ -51,6 +53,7 @@ elements.forEach((element, index) => {
 });
 
 
+//Botão para mostrar e ocultar o e-mail
 const socials = document.querySelectorAll('.show-info');
 const showInfo = document.querySelectorAll('.social-email');
 
@@ -59,3 +62,23 @@ socials.forEach((social, index) => {
         showInfo[index].classList.toggle('show-email')
     })
 })
+
+//Botão que retorna ao início da página
+document.addEventListener('DOMContentLoaded', function () {
+    const btnTop = document.getElementById("up-arrow");
+
+    btnTop.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    window.addEventListener("scroll", function () {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            btnTop.style.opacity = "1";
+        } else {
+            btnTop.style.opacity = "0";
+        }
+    });
+});

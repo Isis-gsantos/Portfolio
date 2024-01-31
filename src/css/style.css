@@ -8,6 +8,24 @@ html {
     scroll-behavior: smooth;
 }
 
+.up-arrow {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--white);
+    padding: 5px;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    z-index: 5;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.up-arrow img {
+    max-width: 20px;
+}
+
 /* FIRST LOOK */
 .first-look {
     height: 100vh;
@@ -202,7 +220,7 @@ html {
     background-image: var(--background);
     width: 100%;
     height: 100%;
-    /* filter: opacity(92%); */
+    /* filter: opacity(60%); */
 }
 
 .about-me .icon {
@@ -229,7 +247,7 @@ html {
 
 /* PROJECTS */
 .projects {
-    background-image: var(--background);
+    background-image: url('../images/background-wopacity.png');
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -312,6 +330,11 @@ p {
 
 .skills-itens .fa-brands:hover {
     transform: scale(1.3);
+}
+
+.skills-itens .skill-name {
+    font-size: 2rem;
+    margin-top: 10px;
 }
 
 .skills-itens .skill-description {

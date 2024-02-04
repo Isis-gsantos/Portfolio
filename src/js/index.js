@@ -2,8 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const phrases = [
         "Olá! Eu sou Isis Gonçalves Santos",
-        "Sou Desenvolvedora Frontend",
-        "Estou em busca de oportunidades!"
+        "Sou Desenvolvedora Frontend"
     ];
 
     const outputElement = document.getElementById('typed-output');

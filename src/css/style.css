@@ -220,7 +220,6 @@ html {
     background-image: var(--background);
     width: 100%;
     height: 100%;
-    /* filter: opacity(60%); */
 }
 
 .about-me .icon {
@@ -274,18 +273,39 @@ html {
     font-size: 1.8rem;
 }
 
+.project-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-list li::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    background-color: #495057;
+    border-radius: 20px;
+    width: 90%;
+    height: 100%;
+}
+
 .projects-list a,
 p {
     margin: 15px;
+    z-index: var(--z-index);
 }
 
 .projects-list h3 {
     font-size: var(--title-fontsize);
+    z-index: var(--z-index);
 }
 
 .projects img {
     max-width: 450px;
     border-radius: 10px;
+    z-index: var(--z-index);
 }
 
 .projects-list li p {
@@ -294,6 +314,7 @@ p {
 
 .projects-list .languages {
     font-size: var(--big-fontsize);
+    z-index: var(--z-index);
 }
 
 /* SKILLS */

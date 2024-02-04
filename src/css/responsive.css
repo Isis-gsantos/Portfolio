@@ -83,7 +83,11 @@
 
 @media (max-width: 500px) {
     .projects .projects-list img {
-        max-width: 100%;
+        max-width: 90%;
+    }
+
+    .projects-list li::before {
+        width: 100%;
     }
 
     .contact img {

@@ -5,4 +5,5 @@
     --title-fontsize: 3rem;
     --background: url('../images/cool-background.png');
     --white: #ffffff;
+    --z-index: 3
 }

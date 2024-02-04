@@ -246,7 +246,7 @@ html {
 
 /* PROJECTS */
 .projects {
-    background-image: url('../images/background-wopacity.png');
+    background-image: var(--background);
     display: flex;
     flex-direction: column;
     justify-content: center;

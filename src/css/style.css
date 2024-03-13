@@ -300,6 +300,7 @@ p {
 .projects-list h3 {
     font-size: var(--title-fontsize);
     z-index: var(--z-index);
+    text-align: center;
 }
 
 .projects img {

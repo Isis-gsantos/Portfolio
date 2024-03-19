@@ -345,12 +345,12 @@ p {
     margin: 20px;
 }
 
-.skills-itens .fa-brands {
+.skills-itens .fa-brands, .skills-itens .fa-solid {
     font-size: 5.5rem;
     transition: 0.2s ease-in;
 }
 
-.skills-itens .fa-brands:hover {
+.skills-itens .fa-brands:hover, .skills-itens .fa-solid:hover {
     transform: scale(1.3);
 }
 
